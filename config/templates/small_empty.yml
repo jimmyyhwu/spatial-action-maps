@@ -1,0 +1,52 @@
+# General
+experiment_name: small_empty
+run_name:
+logs_dir: logs
+checkpoints_dir: checkpoints
+log_dir:
+checkpoint_dir:
+model_path:
+checkpoint_path:
+
+# Learning
+batch_size: 32
+learning_rate: 0.01
+weight_decay: 0.0001
+grad_norm_clipping: 10
+checkpoint_freq: 1000
+
+# DQN
+policy_type: dense_action_space
+total_timesteps: 60000
+exploration_timesteps: 6000
+replay_buffer_size: 10000
+use_double_dqn: True
+discount_factor: 0.99
+final_exploration: 0.01
+learning_starts: 1000
+target_update_freq: 1000
+num_input_channels: 4
+
+# Simulation
+room_length: 1.0
+room_width: 0.5
+num_cubes: 10
+obstacle_config: small_empty
+use_distance_to_receptacle_channel: False
+distance_to_receptacle_channel_scale: 0.25
+use_shortest_path_to_receptacle_channel: True
+use_shortest_path_channel: True
+shortest_path_channel_scale: 0.25
+use_position_channel: False
+position_channel_scale: 0.25
+partial_rewards_scale: 2.0
+use_shortest_path_partial_rewards: True
+collision_penalty: 0.25
+nonmovement_penalty: 0.25
+use_shortest_path_movement: True
+fixed_step_size:
+use_steering_commands: False
+steering_commands_num_turns: 4
+ministep_size: 0.25
+inactivity_cutoff: 100
+random_seed:

@@ -1,0 +1,52 @@
+<?xml version="0.0" ?>
+<robot name="robot">
+  <link name="base_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value="0.1"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0.0215 0 0.035"/>
+      <geometry>
+        <box size="0.07 0.06 0.07" />
+      </geometry>
+      <material name="gray">
+        <color rgba="0.3529 0.3529 0.3529 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0.0215 0 0.035"/>
+      <geometry>
+        <box size="0.07 0.06 0.07" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="backpack">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value="0"/>
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-0.0135 0 0.035"/>
+      <geometry>
+        <cylinder length="0.07" radius="0.03"/>
+      </geometry>
+      <material name="gray">
+        <color rgba="0.3529 0.3529 0.3529 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-0.0135 0 0.035"/>
+      <geometry>
+        <cylinder length="0.07" radius="0.03"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="base_link_to_backpack" type="fixed">
+    <parent link="base_link"/>
+    <child link="backpack"/>
+    <origin xyz="0 0 0"/>
+  </joint>
+</robot>
