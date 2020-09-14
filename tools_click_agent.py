@@ -68,8 +68,8 @@ def main():
 
     # Room config
     kwargs = {}
-    kwargs['room_width'] = 1 if 'Large' in obstacle_config else 0.5
-    kwargs['num_cubes'] = 20 if 'Large' in obstacle_config else 10
+    kwargs['room_width'] = 1 if obstacle_config.startswith('large') else 0.5
+    kwargs['num_cubes'] = 20 if obstacle_config.startswith('large') else 10
     kwargs['obstacle_config'] = obstacle_config
     #kwargs['random_seed'] = 0
 
