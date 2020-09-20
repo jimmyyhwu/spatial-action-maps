@@ -854,8 +854,8 @@ class Environment:
 
     def _update_occupancy_map_visualization(self, robot_waypoint_positions=None, robot_target_end_effector_position=None):
         occupancy_map_vis = self._create_padded_room_zeros() + 0.5
-        occupancy_map_vis[np.isclose(self.occupancy_map, 1)] = 0
         occupancy_map_vis[np.isclose(self.free_space_map, 1)] = 1
+        occupancy_map_vis[np.isclose(self.occupancy_map, 1)] = 0
         height, width = occupancy_map_vis.shape
         height, width = height / LOCAL_MAP_PIXELS_PER_METER, width / LOCAL_MAP_PIXELS_PER_METER
         self.plt.clf()
