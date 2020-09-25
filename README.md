@@ -143,7 +143,7 @@ The `--robot-index` argument specifies the robot you wish to control and refers 
 
 ### 3D Printed Parts
 
-The real environment setup contains some 3D printed parts. We used the [Sindoh 3DWOX 1](https://www.amazon.com/Sindoh-3DWOX-Printer-New-Model/dp/B07C79C9RB) 3D printer to print them, but other printers should work too. All 3D model files are in the [`stl`](stl) directory:
+The real environment setup contains some 3D printed parts. We used the [Sindoh 3DWOX 1](https://www.amazon.com/Sindoh-3DWOX-Printer-New-Model/dp/B07C79C9RB) 3D printer to print them, but other printers should work too. We used PLA filament. All 3D model files are in the [`stl`](stl) directory:
 * `cube.stl`: 3D model for the cubes (objects)
 * `blade.stl`: 3D model for the bulldozer blade attached to the front of the robot
 * `board-corner.stl`: 3D model for the board corners, which are used for pose estimation with ArUco markers
