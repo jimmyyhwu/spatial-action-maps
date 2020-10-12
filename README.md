@@ -191,6 +191,7 @@ If you find this work useful for your research, please consider citing:
   title = {Spatial Action Maps for Mobile Manipulation},
   author = {Wu, Jimmy and Sun, Xingyuan and Zeng, Andy and Song, Shuran and Lee, Johnny and Rusinkiewicz, Szymon and Funkhouser, Thomas},
   booktitle = {Proceedings of Robotics: Science and Systems (RSS)},
-  year = {2020}
+  year = {2020},
+  doi = {10.15607/RSS.2020.XVI.035}
 }
 ```
