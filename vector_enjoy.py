@@ -15,7 +15,7 @@ def main(args):
         print('Could not connect to aruco server for pose estimates')
         return
 
-    # Create action executor for the physical robot
+    # Create action executor for the real robot
     action_executor = vector_action_executor.VectorActionExecutor(args.robot_index)
 
     # Create env
@@ -30,7 +30,7 @@ def main(args):
     if args.debug:
         kwargs['use_gui'] = True
     cube_indices = list(range(args.num_cubes))
-    env = utils.get_env_from_cfg(cfg, physical_env=True, robot_index=action_executor.robot_index, cube_indices=cube_indices, **kwargs)
+    env = utils.get_env_from_cfg(cfg, real_env=True, robot_index=action_executor.robot_index, cube_indices=cube_indices, **kwargs)
     env.reset()
 
     # Create policy

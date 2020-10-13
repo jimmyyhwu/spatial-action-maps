@@ -321,7 +321,7 @@ class Environment:
         ratio = min(ratio_x, ratio_y)
         robot_target_end_effector_position = (np.asarray(robot_initial_position) + ratio * diff).tolist()
         if dry_run:
-            # Used in physical environment
+            # Used in real environment
             return robot_target_end_effector_position
 
         # Compute waypoint positions

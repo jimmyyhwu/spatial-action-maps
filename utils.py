@@ -75,7 +75,7 @@ def select_run():
 
     return selected_config_path
 
-def get_env_from_cfg(cfg, physical_env=False, **kwargs):
+def get_env_from_cfg(cfg, real_env=False, **kwargs):
     kwarg_list = [
         'room_length', 'room_width', 'num_cubes', 'obstacle_config',
         'use_distance_to_receptacle_channel', 'distance_to_receptacle_channel_scale',
@@ -89,7 +89,7 @@ def get_env_from_cfg(cfg, physical_env=False, **kwargs):
     for kwarg_name in kwarg_list:
         original_kwargs[kwarg_name] = cfg[kwarg_name]
     original_kwargs.update(kwargs)
-    if physical_env:
+    if real_env:
         return environment.RealEnvironment(**original_kwargs)
     return environment.Environment(**original_kwargs)
 

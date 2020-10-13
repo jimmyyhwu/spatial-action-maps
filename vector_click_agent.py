@@ -64,7 +64,7 @@ def main(args):
         print('Could not connect to aruco server for pose estimates')
         return
 
-    # Create action executor for the physical robot
+    # Create action executor for the real robot
     action_executor = vector_action_executor.VectorActionExecutor(args.robot_index)
 
     # Create pybullet environment to mirror real-world
