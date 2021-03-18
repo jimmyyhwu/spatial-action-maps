@@ -1,5 +1,9 @@
 # spatial-action-maps
 
+**Update:** Please see our new [spatial-intention-maps](https://github.com/jimmyyhwu/spatial-intention-maps) repository, which extends this work to multi-agent settings. It contains many new improvements to the codebase, and while the focus is on multi-agent, it also supports single-agent training.
+
+---
+
 This code release accompanies the following paper:
 
 ### Spatial Action Maps for Mobile Manipulation
