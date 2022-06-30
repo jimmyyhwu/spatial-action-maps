@@ -10,7 +10,7 @@ This code release accompanies the following paper:
 
 Jimmy Wu, Xingyuan Sun, Andy Zeng, Shuran Song, Johnny Lee, Szymon Rusinkiewicz, Thomas Funkhouser
 
-*Robotics: Science and Systems (RSS), 2020*
+*Robotics: Science and Systems (RSS)*, 2020
 
 [Project Page](https://spatial-action-maps.cs.princeton.edu) | [PDF](https://spatial-action-maps.cs.princeton.edu/paper.pdf) | [arXiv](https://arxiv.org/abs/2004.09141) | [Video](https://youtu.be/FcbIcU_VnzU)
 
